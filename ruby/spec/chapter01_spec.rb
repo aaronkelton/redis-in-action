@@ -18,6 +18,7 @@ describe 'Chapter 1' do
     puts article
     expect(article).to be_truthy
 
+    # TODO(@aaronkelton): the article pararm really should be some kind of redis instance and NOT just a string.
     article_vote(client, 'other_user', "article:#{article_id}")
     puts 'We voted for the article, it now has votes:'
     votes = client.hget("article:#{article_id}", 'votes').to_i
