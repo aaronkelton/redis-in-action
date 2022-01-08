@@ -2,6 +2,7 @@
 /java/build
 GeoLiteCity-*.csv
 .idea
+.vscode
 *.iml
 node_modules
 clojure-lang/target
